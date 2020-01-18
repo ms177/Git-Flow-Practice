@@ -167,8 +167,23 @@ You only need to add your TL as a collaborator to your repository once, not ever
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the fix for the box model? 
+Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+Block elements, on the other hand, typically cause a line break to occur (although, as usual, this can be changed using CSS).
 
+    2. What happens when an element is positioned absolutely? 
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). 
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+Use inline-block elements
+ 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+3 elements that are diplay block by default: <p>, <div>, <h1>
+2 elements that are display inline by default: <a>, <span>
+1 element that is display inline-block by default: <img>
+
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+Box model is a box that wraps around your elements. You will be the one who set it up. You can choose its margin, padding, border and contents... 
+
+Together with the contents widtha nd height, it will define how your contents look like on the website.
