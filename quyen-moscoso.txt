@@ -79,8 +79,9 @@ use period before class name. Ex:
     22. What is a parent child selector? When would this be useful?
 
 Child Selector is used to match all the elements which are child of a specified element. 
-It gives the relation between two elements. The element > element selector selects those elements which are the children of specific parent. 
-The operand on the left side of > is the parent and the operand on the right is the children element 
+It gives the relation between two elements. The element > element selector selects those elements which are the children of specific parent.
+
+This would be useful when your have multiple elements in 1 section but only want to format the elements that is a direct child of a specific element.
 
     23. How do you select all links within a div with the class of sidebar?
 .sidebar a {
