@@ -1,20 +1,18 @@
 My codepen link: https://codepen.io/bluemoon177/pen/dyPgVZa
 
 1. What is Semantic HTML? 
-Ssemantic element clearly describes its meaning to both the browser and the developer.
+Ssemantic HTML is using a meaningful mark up for your tags.
 
     2. What is HTML used for? 
-HTML is short for Hypertext Markup Language. HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web.
+HTML is short for Hypertext Markup Language. HTML is used to display the contents on the website
 
     3. What is an attribute and where do we put it?
  
-All HTML elements can have attributes
 Attributes provide additional information about an element
-Attributes are always specified in the start tag
-Attributes usually come in name/value pairs like: name="value"
+We put them in tags.
 
     4. What is the h1 tag used for? How many times should I use it on a page?
-The header tag, or the <h1> tag in HTML, will usually be the title of a post, or other emphasized text on the page. It will usually be the largest text that stands out.
+h1 tag is used for title.
 
 It should be used only 1 time on a page.
 
@@ -25,13 +23,13 @@ It should be used only 1 time on a page.
 <head>
 
     7. What is an id? 
- The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document)
+ The id attribute specifies a unique id for an HTML element.
 
     8. What elements can I add an id to? 
 Any elements.
 
     9. How many times can I use the same id on a page? 
-there are no limit but we should only use 1 per page.
+There are no limits but we should only use 1 per page.
 
     10. What is a class? 
 The class is an attribute which specifies one or more class names for an HTML element. The class attribute can be used on any HTML element. 
@@ -43,21 +41,20 @@ Any elements.
 Many times.
  
     13. How do I get my link to open in a new tab?
-Just add a target="_blank" attribute to your links (anchor tags). Or the user can hold down control button and click on the link.
+Use target="_blank" attribute to your links (<a> tags). Or the user can hold down control button and click on the link.
 
     14. What is the alt attribute used for? 
-The alt attribute specifies an alternate text for an image, if the image cannot be displayed. 
-The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+The alt attribute is used for in case the user computer couldn't load the image, then it will use the alt attribute instead.
 
     15. How do I reference an id?
 Use # then the id.
 
     16. What is the difference between a section and a div
-<section> means that the content inside is grouped (i.e. relates to a single theme), and should appear as an entry in an outline of the page.
-<div>, on the other hand, does not convey any meaning, aside from any found in its class, lang and title attributes.
+<section> is used for a group of contents. It is a semantic tag
+<div>, can be used for anything but doesn't mean anything.
 
     17. What is CSS used for? 
-CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+CSS is used to define styles such as font, size, colors... for your HTML
 
     18. How to we select an element? Example - every h2 on the page
 use the name of the element without the bracket. Ex: 
@@ -86,6 +83,8 @@ It gives the relation between two elements. The element > element selector selec
 The operand on the left side of > is the parent and the operand on the right is the children element 
 
     23. How do you select all links within a div with the class of sidebar?
+.sidebar a {
+}
 
     24. What is a pseudo selector?
 A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
