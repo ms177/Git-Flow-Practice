@@ -1,0 +1,189 @@
+My codepen link: https://codepen.io/bluemoon177/pen/dyPgVZa
+
+1. What is Semantic HTML? 
+Ssemantic HTML is using a meaningful mark up for your tags.
+
+    2. What is HTML used for? 
+HTML is short for Hypertext Markup Language. HTML is used to display the contents on the website
+
+    3. What is an attribute and where do we put it?
+ 
+Attributes provide additional information about an element
+We put them in tags.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+h1 tag is used for title.
+
+It should be used only 1 time on a page.
+
+    5. Name two tags that have required attributes
+<input>, <select>
+
+    6. What do we put in the head of our HTML document? 
+<head>
+
+    7. What is an id? 
+ The id attribute specifies a unique id for an HTML element.
+
+    8. What elements can I add an id to? 
+Any elements.
+
+    9. How many times can I use the same id on a page? 
+There are no limits but we should only use 1 per page.
+
+    10. What is a class? 
+The class is an attribute which specifies one or more class names for an HTML element. The class attribute can be used on any HTML element. 
+
+    11. What elements can I add a class to? 
+Any elements.
+
+    12. How many times can I use the same class on a page?
+Many times.
+ 
+    13. How do I get my link to open in a new tab?
+Use target="_blank" attribute to your links (<a> tags). Or the user can hold down control button and click on the link.
+
+    14. What is the alt attribute used for? 
+The alt attribute is used for in case the user computer couldn't load the image, then it will use the alt attribute instead.
+
+    15. How do I reference an id?
+Use # then the id.
+
+    16. What is the difference between a section and a div
+<section> is used for a group of contents. It is a semantic tag
+<div>, can be used for anything but doesn't mean anything.
+
+    17. What is CSS used for? 
+CSS is used to define styles such as font, size, colors... for your HTML
+
+    18. How to we select an element? Example - every h2 on the page
+use the name of the element without the bracket. Ex: 
+h2 {
+}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+Class can be used multiple times, but ID should be used only 1. 
+
+Example:
+
+ID is used for something unique like student ID. There should be only 1 ID for each student. Class can be used for general like phone numers. Students may have more than 1 phone number.
+
+    20. How do we select classes in CSS?
+use period before class name. Ex: 
+.class 	{
+}
+
+    21. How do we select a p element with a single class of “human””?
+.human p {}
+
+    22. What is a parent child selector? When would this be useful?
+
+Child Selector is used to match all the elements which are child of a specified element. 
+It gives the relation between two elements. The element > element selector selects those elements which are the children of specific parent.
+
+This would be useful when your have multiple elements in 1 section but only want to format the elements that is a direct child of a specific element.
+
+    23. How do you select all links within a div with the class of sidebar?
+.sidebar a {
+}
+
+    24. What is a pseudo selector?
+A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer.
+
+    25. What do we use the change the spacing between lines?
+Use line-height
+
+    26. What do we use to change the spacing between letters?
+Use letter-spacing
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+CAPITALS:
+text-transform: uppercase
+
+lowercase:
+text-transform: lowercase
+
+Capitalize:
+text-transform: capitalize
+
+    28. How do I add a 1px border around my div that is dotted and black?
+img {
+  outline-style: dotted;
+  outline-color: black;
+  border: 1px
+}
+
+
+    29. How do I select everything on the page? 
+Ctrl-A
+
+    30. How do I write a comment in CSS?
+Select the comments and use Ctrl-/ or use "/*" before and "*/" after the comments.
+
+    31. How do I find out what file I am in, when I am using the command line? 
+use "pwd"
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+use "ls"
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+
+Use "rm" and the file name. Should be careful because there will be no warning and no recovery.
+ 
+    34. Why should I use version control? 
+To keep track of changes made on your files and easier for a team to work together.
+
+    35. How often should I commit to github?
+every single time you make changes to your code
+
+    36. What is the command we would use to push our repo up to github? 
+git push
+
+    37. Walk me through Lambda's git flow. 
+1. Make sure you are on the correct assignment which will be the lambda repository:
+2) Fork the repository to your account
+3)Click on “Clone or Download” then copy the URL link into your clipboard.
+4) Open up a new Git Bash instance in the folder that you want your project to go.
+5) Type: “git clone <copy/pasta’d URL from your clipboard>”
+6) Type “dir” or “ls” (<= Lower-case “L”, “s”) to check the files in this directory.  You should see the project that you just cloned listed in the directory.  Type “cd <project-name>” to enter the directory of the project.
+7) You can see here that you’ve “git cloned” the master branch, so you’re currently on the master branch.  Type “git checkout -b <your-name>” (can’t have spaces in branch name, need hyphen)
+8) You can now see in your directory path that you’re on branch <your-name>.  Type in “git status” to verify that you’re on the correct branch.
+9) Make some changes to your project and save them.  As a general good practice, commit regularly and commit often.  Make sure your commit messages describe what you just did so that if something happens it’s easy to go back and know where you left off.
+10) After you’ve made some changes to your project, type: “git add .”  This will stage your changes to the staging area.
+11) After you’ve staged your changes, commit those changes. Type:
+ “git commit -m “<some meaningfully semantic message about your changes here>”
+This will commit your changes and allow you to make an inline commit message that will be attached to the commit log.
+12) After you’ve made commits and are ready to submit your project, type: 
+“git push origin <your-branch-name>” (It may take 5-30 seconds to finish, be patient)
+13) After you push, go back to your github repository and refresh the page.  You should now see this message in your repository showing that you just pushed up to your branch.
+14) Before we make a pull request, we need to add our TL as a collaborator on the project. 
+You only need to add your TL as a collaborator to your repository once, not every time you make a new pull request. Click on Settings.
+15)  Now that your TL is a collaborator, you can finish the assignment by making a “PR”, or Pull Request.  Go back to the homepage of your repository by clicking on “Code”:
+16) Click on “Compare and Pull Request”:
+17) If you don’t see your github handle, search for yourself and click on your <Username>/<Repository Name>.  If you do not do this, you will by default be trying to merge your branch into the LambdaSchool project repo which WILL NOT WORK.  What you’re doing here is creating a Pull Request (PR) from the branch that you’ve created <your-branch-name> into the master branch of your own repository.
+18) Add a Pull Request Subject and a semantic message that will help your TL understand what you finished or still need to complete.  Once your TL has accepted your collaborator request, you should be able to add them as a reviewer to the repository.  If they haven’t accepted and your assignment is due, send them a DM to remind them.
+27) Click on “Create pull request”.  If you’ve done everything correctly, this is what you should see.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+Block elements, on the other hand, typically cause a line break to occur (although, as usual, this can be changed using CSS).
+
+    2. What happens when an element is positioned absolutely? 
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). 
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+Use inline-block elements
+ 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+3 elements that are diplay block by default: <p>, <div>, <h1>
+2 elements that are display inline by default: <a>, <span>
+1 element that is display inline-block by default: <img>
+
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+Box model is a box that wraps around your elements. You will be the one who set it up. You can choose its margin, padding, border and contents... 
+
+Together with the contents widtha nd height, it will define how your contents look like on the website.
